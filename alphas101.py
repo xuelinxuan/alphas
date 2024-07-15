@@ -200,7 +200,7 @@ class Alphas101(Alphas):
         self.close = df_data['close'] # 收盘价
         self.volume = df_data['volume'] # 成交量
         self.returns = returns(df_data['close']) # 日收益
-        self.vwap = df_data['vwap']  # 成交均价
+        # self.vwap = df_data['vwap']  # 成交均价
 
         
     # Alpha#1	 (rank(Ts_ArgMax(SignedPower(((returns < 0) ? stddev(returns, 20) : close), 2.), 5)) -0.5)
