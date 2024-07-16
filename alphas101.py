@@ -197,7 +197,7 @@ class Alphas101(Alphas):
         self.open = df_data['open'] # 开盘价
         self.high = df_data['high'] # 最高价
         self.low = df_data['low'] # 最低价
-        self.close = df_data['close'] # 收盘价
+        self.close = df_data[['close']] # 收盘价
         self.volume = df_data['volume'] # 成交量
         self.returns = returns(df_data['close']) # 日收益
         # self.vwap = df_data['vwap']  # 成交均价
